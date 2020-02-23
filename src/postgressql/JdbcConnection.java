@@ -21,7 +21,7 @@ public class JdbcConnection {
     private String password = "admin";
 
     public Connection connection() throws ClassNotFoundException {
-        Class.forName("com.mysql.jdbc.Driver");
+        Class.forName("org. postgresql. Driver");
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(url, user, password);
